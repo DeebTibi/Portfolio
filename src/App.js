@@ -21,6 +21,7 @@ import haar from './Assets/haar.png';
 import portfolio from './Assets/portfolio.png';
 import GradeSheet from './Assets/grades_website.pdf'
 import CV from './Assets/CV.pdf'
+import { Link } from '@mui/material';
 
 function App() {
 
@@ -32,7 +33,7 @@ function App() {
         </div>
         <div className='menu-socials menu-container'>
           <SocialIcon url='https://linkedin.com/in/deeb-tibi' bgColor='rgb(38,38,38)'></SocialIcon>
-          <SocialIcon url='https://github.com' bgColor='rgb(38,38,38)'></SocialIcon>
+          <SocialIcon url='https://github.com/DeebTibi' bgColor='rgb(38,38,38)'></SocialIcon>
         </div>
       </div>
       <div className='app-hero'>
@@ -129,7 +130,7 @@ function App() {
                 />
                 <CardContent>
                   <Typography style={{ 'fontFamily': 'DM Sans, sans-serif', 'fontWeight': 700 }} variant="h5" component="div">
-                    Haar Cascades
+                    Haar Cascades (Not Finished)
                   </Typography>
                   <Typography variant="body1" style={{ 'fontFamily': 'DM Sans, sans-serif' }}>
                     Based on a 2001 paper by Paul Viola and Michael Jones. In this project I attempted to implement and use the haar features concept utilized in the paper to detect faces on an image.
@@ -137,7 +138,7 @@ function App() {
                   </Typography>
                 </CardContent>
                 <CardActions>
-                  <Button variant='contained' size="medium">GITHUB</Button>
+                  <Button variant='contained' size="medium" href='https://github.com/DeebTibi/haar_cascades' >GITHUB</Button>
                 </CardActions>
                 <div className='spacer-20px'></div>
               </Card>
@@ -158,7 +159,7 @@ function App() {
                   </Typography>
                 </CardContent>
                 <CardActions>
-                  <Button variant='contained' size="medium">GITHUB</Button>
+                  <Button variant='contained' size="medium" href='https://github.com/DeebTibi/Portfolio'>GITHUB</Button>
                 </CardActions>
                 <div className='spacer-20px'></div>
               </Card>
