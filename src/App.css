@@ -190,10 +190,7 @@ body {
     transition: 0.5s;
 }
 
-.hire-me:hover,
-.hire-me:active {
-    background-color: rgb(29, 40, 160);
-}
+
 
 .resume {
     background-color: var(--white);
@@ -207,11 +204,7 @@ body {
     transition: 0.5s;
 }
 
-.resume:hover,
-.resume:active {
-    background-color: var(--dark);
-    color: var(--white);
-}
+
 
 .email {
     height: fit-content;
@@ -301,6 +294,33 @@ body {
 
 
 
+
+@media (hover: hover) {
+    .resume:hover {
+        background-color: var(--dark);
+        color: var(--white);
+        transition: 0.2s;
+    }
+
+    .hire-me:hover {
+        background-color: rgb(29, 40, 160);
+        transition: 0.2s;
+    }
+}
+
+@media (hover: none) {
+
+    .resume:active {
+        background-color: var(--dark);
+        color: var(--white);
+        transition: 0.2s;
+    }
+
+    .hire-me:active {
+        background-color: rgb(29, 40, 160);
+        transition: 0.2s;
+    }
+}
 
 @media screen and (max-width: 1960px) {
 
