@@ -468,3 +468,46 @@ body {
         --hero-side-padding: 1.2em;
     }
 }
+
+@media screen and (max-width: 450px) {
+
+
+    .primary-text {
+        --size-primary: 4.5em;
+    }
+
+    .primary-btn,
+    .resume,
+    .secondary-text {
+        --size-secondary: 1.4em;
+    }
+
+    .profile-photo {
+        display: none;
+    }
+
+    #hero-title {
+        flex: 0 0 100%;
+    }
+
+    .content-container {
+        padding-right: 0;
+        width: calc(100% - var(--hero-side-padding));
+    }
+
+    .side-pad,
+    .section-with-padding,
+    .app-sep,
+    .app-desc {
+        --side-padding: 1em;
+    }
+
+
+    .paragraph-text {
+        --size-paragraph: 0.8em;
+    }
+
+    .content-container {
+        --hero-side-padding: 1.2em;
+    }
+}
