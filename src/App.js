@@ -19,6 +19,7 @@ import { SocialIcon } from 'react-social-icons';
 import face from './Assets/face.jpg';
 import haar from './Assets/haar.png';
 import portfolio from './Assets/portfolio.png';
+import AVL from './Assets/AVL.png'
 import GradeSheet from './Assets/grades_website.pdf'
 import CV from './Assets/CV.pdf'
 import { Link } from '@mui/material';
@@ -122,10 +123,10 @@ function App() {
           <div className='spacer-20px'></div>
           <div className='project-display'>
             <div className='project-card-basic'>
-              <Card>
+              <Card style={{ height: "100%" }}>
                 <CardMedia
                   component="img"
-                  height="194"
+                  height="140"
                   image={haar}
                 />
                 <CardContent>
@@ -144,10 +145,10 @@ function App() {
               </Card>
             </div>
             <div className='project-card-basic'>
-              <Card>
+              <Card style={{ height: "100%" }}>
                 <CardMedia
                   component="img"
-                  height="194"
+                  height="140"
                   image={portfolio}
                 />
                 <CardContent>
@@ -160,6 +161,27 @@ function App() {
                 </CardContent>
                 <CardActions>
                   <Button variant='contained' size="medium" href='https://github.com/DeebTibi/Portfolio'>GITHUB</Button>
+                </CardActions>
+                <div className='spacer-20px'></div>
+              </Card>
+            </div>
+            <div className='project-card-basic'>
+              <Card style={{ height: "100%" }}>
+                <CardMedia
+                  component="img"
+                  height="140"
+                  image={AVL}
+                />
+                <CardContent>
+                  <Typography style={{ 'fontFamily': 'DM Sans, sans-serif', 'fontWeight': 700 }} variant="h5" component="div">
+                    AVL Trees
+                  </Typography>
+                  <Typography variant="body1" style={{ 'fontFamily': 'DM Sans, sans-serif' }}>
+                    An implementation of self balancing Ranked AVL Trees with support for methods like Split, Join, Rank and Select. This project was given to us as an assignment in data structures course.
+                  </Typography>
+                </CardContent>
+                <CardActions>
+                  <Button variant='contained' size="medium" href='https://github.com/DeebTibi/AVL/tree/main'>GITHUB</Button>
                 </CardActions>
                 <div className='spacer-20px'></div>
               </Card>
