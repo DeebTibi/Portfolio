@@ -86,7 +86,7 @@ function App() {
             Learning, teaching, socializing and team work are my daily drivers, that and a good cup of speciality coffee 😄.
             Im currently learning computer science at Tel-Aviv University and plan to enrich my experience, learn, help and aid the Hi-tech field by working in a company.
             I'm familiar and experienced in many programming languages of which are: Python, Java, Node JS, Rustlang, C#, Dart (For flutter development).
-            while I'm not that much experienced in the professional space, I do have a good amount of experience working many personal projects and a considerable amount of freelance work.`}
+            while I'm not that much experienced in the professional space, I do have a good amount of experience working on many personal projects and a considerable amount of freelance work.`}
           </div>
           <div className='spacer-15p'></div>
         </div>
