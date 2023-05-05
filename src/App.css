@@ -139,7 +139,7 @@ body {
 
 .app-desc {
     width: calc(100% - var(--side-padding));
-    height: 40em;
+    height: fit-content;
     max-height: 50em;
     padding-left: var(--side-padding);
     flex-grow: 1;
@@ -350,10 +350,6 @@ body {
 
     .content-container {
         --hero-side-padding: 7em;
-    }
-
-    .app-desc {
-        height: 22em;
     }
 
 }

@@ -22,7 +22,8 @@ import portfolio from './Assets/portfolio.png';
 import AVL from './Assets/AVL.png'
 import GradeSheet from './Assets/grades_website.pdf'
 import CV from './Assets/CV.pdf'
-import { Link } from '@mui/material';
+import { easeInOut, motion } from "framer-motion"
+
 
 function App() {
 
@@ -43,27 +44,32 @@ function App() {
             <div className='spacer-15p'></div>
             <div className='content-start content-container'>
               <div id="hero-title" >
-                <div className='title-1 primary-text'>
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 1 }}
+                  transition={{ ease: "easeOut", duration: 0.5 }}
+                  className='title-1 primary-text'>
                   {"Hi! I'm"}
-                </div>
-                <div className='title-2 primary-text'>
+                </motion.div>
+                <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ ease: "easeOut", duration: 0.5 }} className='title-2 primary-text'>
                   {"Deeb Tibi"}
-                </div>
+                </motion.div>
                 <div className='spacer-5p'></div>
-                <div className='self-desc secondary-text'>
+                <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ ease: "easeOut", duration: 0.5, delay: 0.5 }} className='self-desc secondary-text'>
                   {"Im a B.sc Computer Science student at Tel-Aviv University"}
-                </div>
+                </motion.div>
                 <div className='spacer-5p'></div>
-                <div className='button-container'>
+                <motion.div className='button-container' initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ ease: "easeOut", duration: 0.5, delay: 0.5 }}>
                   <a href={GradeSheet} without rel="noopener noreferrer" target="_blank"><button className='hire-me primary-btn'>{"GRADES"}</button></a>
                   <a href={CV} without rel="noopener noreferrer" target="_blank"><button className='resume'>{"RESUME"}</button></a>
-                </div>
+                </motion.div>
               </div>
               <div className='profile-photo'>
-                <img src={face} className="avatar">
-                </img>
-                <div className='back-circle-1'></div>
-                <div className='back-circle-2'></div>
+                <motion.img animate={{ scale: [0, 1.1, 1] }} transition={{ duration: 0.35, ease: easeInOut }} src={face} className="avatar">
+                </motion.img>
+                <motion.div animate={{ scale: [0, 1.1, 1] }} transition={{ duration: 0.35, ease: easeInOut, delay: 0.15 }} className='back-circle-1'></motion.div>
+                <motion.div animate={{ scale: [0, 1.1, 1] }} transition={{ duration: 0.35, ease: easeInOut, delay: 0.2 }} className='back-circle-2'></motion.div>
               </div>
             </div>
             <div className='app-sep'></div>
@@ -76,10 +82,13 @@ function App() {
           <h1 className='paragraph-title-text about-me'>About Me:</h1>
           <div className='spacer-20px'></div>
           <div className='paragraph-text about-me-paragraph'>I'm a computer science and economics enthusiast,
-            I enjoy practicing and understanding computer related concepts from various fields.
+            {`I enjoy practicing and understanding computer related concepts from various fields.
             Learning, teaching, socializing and team work are my daily drivers, that and a good cup of speciality coffee 😄.
-            Im currently learning computer science at Tel-Aviv University and plan to enrich my experience, learn, help and aid the Hi-tech field by working at a company.
+            Im currently learning computer science at Tel-Aviv University and plan to enrich my experience, learn, help and aid the Hi-tech field by working in a company.
+            I'm familiar and experienced in many programming languages of which are: Python, Java, Node JS, Rustlang, C#, Dart (For flutter development).
+            while I'm not that much experienced in the professional space, I do have a good amount of experience working many personal projects and a considerable amount of freelance work.`}
           </div>
+          <div className='spacer-15p'></div>
         </div>
       </div>
       <div className='app-edu side-pad'>
