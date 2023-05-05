@@ -289,6 +289,12 @@ body {
     height: fit-content;
 }
 
+.articles {
+    background-color: var(--white);
+    width: 100%;
+    height: fit-content;
+}
+
 
 
 

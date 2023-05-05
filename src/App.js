@@ -22,6 +22,7 @@ import portfolio from './Assets/portfolio.png';
 import AVL from './Assets/AVL.png'
 import GradeSheet from './Assets/grades_website.pdf'
 import CV from './Assets/CV.pdf'
+import Mojo from './Assets/Mojo.png'
 import { easeInOut, motion } from "framer-motion"
 
 
@@ -198,6 +199,39 @@ function App() {
           </div>
           <div className='spacer-15p'></div>
         </div>
+      </div>
+      <div className='articles side-pad'>
+        <div className='spacer-15p'></div>
+        <div className='section-with-padding'>
+          <h1 className='paragraph-title-text'>
+            Articles I wrote:
+          </h1>
+          <div className='spacer-20px'></div>
+          <div className='project-display'>
+          <div className='project-card-basic'>
+              <Card style={{ height: "100%", backgroundColor: "rgb(38, 38, 38)" }}>
+                <CardMedia
+                  component="img"
+                  height="140"
+                  image={Mojo}
+                />
+                <CardContent>
+                  <Typography style={{ 'fontFamily': 'DM Sans, sans-serif', 'fontWeight': 700, 'color': 'white' }} variant="h5" component="div">
+                    Up to 35,000x faster: Why mojo is what python developers have been looking for
+                  </Typography>
+                  <Typography variant="body1" style={{ 'fontFamily': 'DM Sans, sans-serif', 'color': 'white'  }}>
+                    Mojo is a new superset of python that aims to speedup python and add to it with stuff like explicit declarations and more.
+                  </Typography>
+                </CardContent>
+                <CardActions>
+                  <Button variant='contained' size="medium" href='https://medium.com/@deebtibi/up-to-35-000x-faster-why-mojo-is-the-game-changer-python-developers-have-been-waiting-for-21e12f497f76' >Read</Button>
+                </CardActions>
+                <div className='spacer-20px'></div>
+              </Card>
+            </div>
+          </div>
+        </div>
+        <div className='spacer-15p'></div>
       </div>
     </div>
   );
