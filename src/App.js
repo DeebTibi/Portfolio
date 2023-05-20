@@ -23,6 +23,7 @@ import AVL from './Assets/AVL.png'
 import GradeSheet from './Assets/grades_website.pdf'
 import CV from './Assets/CV.pdf'
 import Mojo from './Assets/Mojo.png'
+import Mips_1 from './Assets/MIPS_1.png'
 import { easeInOut, motion } from "framer-motion"
 
 
@@ -196,6 +197,27 @@ function App() {
                 <div className='spacer-20px'></div>
               </Card>
             </div>
+            <div className='project-card-basic'>
+              <Card style={{ height: "100%" }}>
+                <CardMedia
+                  component="img"
+                  height="140"
+                  image={Mips_1}
+                />
+                <CardContent>
+                  <Typography style={{ 'fontFamily': 'DM Sans, sans-serif', 'fontWeight': 700 }} variant="h5" component="div">
+                    MIPS Assembly 1
+                  </Typography>
+                  <Typography variant="body1" style={{ 'fontFamily': 'DM Sans, sans-serif' }}>
+                    A mini project given to us in computer structure course. we were tasked to implement a few functions in assembly MIPS
+                  </Typography>
+                </CardContent>
+                <CardActions>
+                  <Button variant='contained' size="medium" href='https://github.com/DeebTibi/CS_MiniProject_1'>GITHUB</Button>
+                </CardActions>
+                <div className='spacer-20px'></div>
+              </Card>
+            </div>
           </div>
           <div className='spacer-15p'></div>
         </div>
@@ -208,7 +230,7 @@ function App() {
           </h1>
           <div className='spacer-20px'></div>
           <div className='project-display'>
-          <div className='project-card-basic'>
+            <div className='project-card-basic'>
               <Card style={{ height: "100%", backgroundColor: "rgb(38, 38, 38)" }}>
                 <CardMedia
                   component="img"
@@ -219,7 +241,7 @@ function App() {
                   <Typography style={{ 'fontFamily': 'DM Sans, sans-serif', 'fontWeight': 700, 'color': 'white' }} variant="h5" component="div">
                     Up to 35,000x faster: Why mojo is what python developers have been looking for
                   </Typography>
-                  <Typography variant="body1" style={{ 'fontFamily': 'DM Sans, sans-serif', 'color': 'white'  }}>
+                  <Typography variant="body1" style={{ 'fontFamily': 'DM Sans, sans-serif', 'color': 'white' }}>
                     Mojo is a new superset of python that aims to speedup python and add to it with stuff like explicit declarations and more.
                   </Typography>
                 </CardContent>

@@ -14,7 +14,7 @@
 }
 
 .project-card-basic {
-    flex: 0 0 25em;
+    flex: 0 0 20em;
 }
 
 /* .card-title {
@@ -64,13 +64,13 @@
 
 
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1500px) {
     .project-card-basic {
-        flex: 0 0 30%;
+        flex: 0 0 23%;
     }
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1300px) {
     .project-display {
         flex-direction: column;
         justify-content: flex-start;
